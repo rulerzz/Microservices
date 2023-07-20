@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Microservices\\onboarding-service\\logs\\.ab3c4a6a7e24f80c79ba1ee11a66e4b9960f7759-audit.json",
+    "files": [
+        {
+            "date": 1689788284009,
+            "name": "D:\\Microservices\\onboarding-service\\logs\\error.log.2023-07-19-23",
+            "hash": "ceac9161b4968e69d68b9d71ac66bff16552b3c5eccf00d110a63f9d6024c884"
+        }
+    ],
+    "hashType": "sha256"
+}
