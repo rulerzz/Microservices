@@ -1,0 +1,2 @@
+{"level":"info","message":"Onboarding Service listening on port 5001","service":"onboarding-service"}
+{"level":"info","message":"Connected to MongoDB Database @onboardingdb.tcuq3h0.mongodb.net!","service":"onboarding-service"}
