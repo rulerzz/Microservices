@@ -1,4 +1,7 @@
 const winston = require("winston");
+const { format, createLogger, transports } = winston;
+const { timestamp, combine, errors, json } = format;
+
 const constants = require("./constants");
 require("winston-daily-rotate-file");
 
@@ -18,18 +21,14 @@ const onboardObjectRotate = (filename, level, name) => {
 
 const logger = winston.createLogger({
   level: "info",
-  format: winston.format.json(),
+  format: combine(timestamp(), errors({ stack: true }), json()),
   defaultMeta: { service: "onboarding-service" },
   transports: [
-    //
-    // - Write all logs with importance level of `error` or less to `error.log`
-    // - Write all logs with importance level of `info` or less to `combined.log`
-    //
     new winston.transports.Console({
-      level: constants.WINSTON_LEVEL,
-      colorize: constants.WINSTON_COLORIZE,
-      prettyPrint: constants.WINSTON_PRETTY_PRINT,
-      timestamp: constants.WINSTON_TIMESTAMP,
+      level: "info",
+      colorize: true,
+      prettyPrint: true,
+      timestamp: true
     }),
     onboardObjectRotate(constants.WINSTON_FILE_NAME, "info", "combined-log"),
     onboardObjectRotate(
@@ -43,9 +42,10 @@ const logger = winston.createLogger({
       constants.WINSTON_ERROR_FILE_NAME,
       "error",
       "exception"
-    ),
+    )
   ],
   exitOnError: false,
+  handleExceptions: true
 });
 
 module.exports = logger;

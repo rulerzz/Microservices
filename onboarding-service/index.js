@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const logger = require("./config/winston");
 const bodyParser = require("body-parser");
+const consulClient = require("./config/consul");
 
 const databaseURI = process.env.MONGO_URL.replace(
   "<password>",
@@ -14,8 +15,14 @@ const databaseURI = process.env.MONGO_URL.replace(
 app.use(bodyParser.json());
 
 const registerRouter = require("./routers/register");
+const constants = require("./config/constants");
 
 app.use("/register", registerRouter);
+
+// HEALTH ROUTER FOR SERVICE REGISTRY
+app.get(constants.HEALTHURL, function (request, response) {
+  response.send({ status: "good", pid: process.pid });
+});
 
 app.listen(process.env.PORT, () => {
   mongoose.connect(databaseURI).then(() =>
