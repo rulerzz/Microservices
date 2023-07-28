@@ -1,0 +1,15 @@
+{"level":"info","message":"Onboarding Service listening on port 5001","service":"onboarding-service","timestamp":"2023-07-28T14:34:58.089Z"}
+{"level":"info","message":"Connected to MongoDB Database @onboardingdb.tcuq3h0.mongodb.net!","service":"onboarding-service","timestamp":"2023-07-28T14:34:58.748Z"}
+{"level":"info","message":"Onboarding Service registered with consul","service":"onboarding-service","timestamp":"2023-07-28T14:35:03.881Z"}
+{"level":"info","message":"Onboarding Service listening on port 5001","service":"onboarding-service","timestamp":"2023-07-28T14:40:01.495Z"}
+{"level":"info","message":"Onboarding Service registration failed with consulError: socket hang up","service":"onboarding-service","timestamp":"2023-07-28T14:40:02.010Z"}
+{"level":"info","message":"Connected to MongoDB Database @onboardingdb.tcuq3h0.mongodb.net!","service":"onboarding-service","timestamp":"2023-07-28T14:40:02.318Z"}
+{"level":"info","message":"Onboarding Service listening on port 5001","service":"onboarding-service","timestamp":"2023-07-28T14:41:07.346Z"}
+{"level":"info","message":"Connected to MongoDB Database @onboardingdb.tcuq3h0.mongodb.net!","service":"onboarding-service","timestamp":"2023-07-28T14:41:07.963Z"}
+{"level":"info","message":"Onboarding Service registered with consul","service":"onboarding-service","timestamp":"2023-07-28T14:41:18.169Z"}
+{"level":"info","message":"Onboarding Service listening on port 5001","service":"onboarding-service","timestamp":"2023-07-28T14:41:58.461Z"}
+{"level":"info","message":"Connected to MongoDB Database @onboardingdb.tcuq3h0.mongodb.net!","service":"onboarding-service","timestamp":"2023-07-28T14:41:59.131Z"}
+{"level":"info","message":"Onboarding Service registered with consul","service":"onboarding-service","timestamp":"2023-07-28T14:42:10.636Z"}
+{"level":"info","message":"Onboarding Service listening on port 5001","service":"onboarding-service","timestamp":"2023-07-28T14:44:16.702Z"}
+{"level":"info","message":"Connected to MongoDB Database @onboardingdb.tcuq3h0.mongodb.net!","service":"onboarding-service","timestamp":"2023-07-28T14:44:17.731Z"}
+{"level":"info","message":"Onboarding Service registered with consul","service":"onboarding-service","timestamp":"2023-07-28T14:44:25.492Z"}

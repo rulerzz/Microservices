@@ -1,1 +1,0 @@
-docker run -d -p 8500:8500 -p 8600:8600 --name=consul consul

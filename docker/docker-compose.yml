@@ -1,31 +1,44 @@
 version: '3.8'
 services:
+  reverseproxy:
+    build: ../nginx
+    container_name: nginx
+    networks:
+      - app-network
+    restart: always
+    ports:
+      - "80:80"
+      - "8500:8500"
+      - "5001:5001"
+    depends_on:
+      - consul
+      - onboarding
+    volumes:
+      - ../logs:/var/log/nginx
+
   consul:
-      build:
-        context: ./consul
-        dockerfile: Dockerfile
-      container_name: consul
-      networks:
-        - app-network
-      ports:
-        - "8500:8500"
-        - "8600:8600/tcp"
-        - "8600:8600/udp"
-      command: agent -server -ui -node=server-1 -bootstrap-expect=1 -client=0.0.0.0 -config-file=/consul/config/config.json
+    build:
+      context: ../consul
+      dockerfile: Dockerfile
+    container_name: consul
+    networks:
+      - app-network
+    command: agent -server -ui -node=server-1 -bootstrap-expect=1 -client=0.0.0.0 -config-file=/consul/config/config.json
 
   onboarding:
     restart: always
     build:
-      context: onboarding-service
+      context: ../onboarding-service
       dockerfile: Dockerfile
     container_name: onboarding-service
     networks:
         - app-network
-    ports: 
-      - "5001:5001"
-    depends_on:
-      - consul
-
+    environment:
+      - HOST_IP=192.168.29.60
+      - CONSUL_PORT=8500
+    volumes:
+      - ../logs:/usr/src/app/logs
+  
 networks:
   app-network:
     driver: bridge
