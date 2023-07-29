@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/shreshth/coding/projects/Microservices/onboarding-service/logs/.71538fa69c8ad6eb1173ea16b2e7ae0627f3f980-audit.json",
+    "files": [
+        {
+            "date": 1689909891716,
+            "name": "/home/shreshth/coding/projects/Microservices/onboarding-service/logs/combined.log.2023-07-21-08",
+            "hash": "edb425e40919d5b31a16a570af982f6cee5b4738b4d57ff477e0c88bc32898c6"
+        },
+        {
+            "date": 1689943996770,
+            "name": "/home/shreshth/coding/projects/Microservices/onboarding-service/logs/combined.log.2023-07-21-18",
+            "hash": "81e602586afb7d9771ed596ca81d111c6b76ae1d7914650fb782656c4725fecb"
+        },
+        {
+            "date": 1689946229265,
+            "name": "/home/shreshth/coding/projects/Microservices/onboarding-service/logs/combined.log.2023-07-21-19",
+            "hash": "9c5593e438410d2761c8f8c1e446a2d7e68362c33c378e22dd0427517fdfe78b"
+        }
+    ],
+    "hashType": "sha256"
+}
