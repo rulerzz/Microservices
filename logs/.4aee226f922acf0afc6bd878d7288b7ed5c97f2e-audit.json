@@ -19,6 +19,16 @@
             "date": 1690563603142,
             "name": "/usr/src/app/logs/error.log.2023-07-28-17",
             "hash": "b4c1610075af4e946f29fc67c271c93df13958a2e96afdf56d40c58aeb420e31"
+        },
+        {
+            "date": 1690646421769,
+            "name": "/usr/src/app/logs/error.log.2023-07-29-16",
+            "hash": "3d065ecd7c4257d9e552dfe691e1ddd3d17077f912299dd4d7679b0899c9bca6"
+        },
+        {
+            "date": 1690650016544,
+            "name": "/usr/src/app/logs/error.log.2023-07-29-17",
+            "hash": "41efd0654964ec8112063bab3674de4fd5653bc5f9de18b87180ae237765b21f"
         }
     ],
     "hashType": "sha256"

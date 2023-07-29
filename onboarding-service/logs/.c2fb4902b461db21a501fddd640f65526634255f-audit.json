@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\admin\\Desktop\\Microservices\\onboarding-service\\logs\\.c2fb4902b461db21a501fddd640f65526634255f-audit.json",
+    "files": [
+        {
+            "date": 1690646087308,
+            "name": "C:\\Users\\admin\\Desktop\\Microservices\\onboarding-service\\logs\\error.log.2023-07-29-21",
+            "hash": "a66a00a0d9199c3a5796d88a28a0ed7c609fe5e7f057a68e873ca66f1764b263"
+        },
+        {
+            "date": 1690648862927,
+            "name": "C:\\Users\\admin\\Desktop\\Microservices\\onboarding-service\\logs\\error.log.2023-07-29-22",
+            "hash": "112a7a9548b59520fc31923fbe29973a7fd29d8345b63528c8c5c8389bfea0c5"
+        }
+    ],
+    "hashType": "sha256"
+}

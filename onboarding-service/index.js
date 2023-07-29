@@ -7,6 +7,7 @@ const logger = require("./config/winston");
 const bodyParser = require("body-parser");
 const consulClient = require("./config/consul");
 
+const servicePrefix = `${process.env.SERVICE_VERSION}/${process.env.SERVICE_PREFIX}`;
 const databaseURI = process.env.MONGO_URL.replace(
   "<password>",
   process.env.MONGO_SECRET
@@ -17,7 +18,7 @@ app.use(bodyParser.json());
 const registerRouter = require("./routers/register");
 const constants = require("./config/constants");
 
-app.use("/register", registerRouter);
+app.use(`/${servicePrefix}/register`, registerRouter);
 
 // HEALTH ROUTER FOR SERVICE REGISTRY
 app.get(constants.HEALTHURL, function (request, response) {
