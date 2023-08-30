@@ -8,8 +8,8 @@ services:
     restart: always
     ports:
       - "80:80"
-      - "8500:8500"
-      - "5001:5001"
+      - "1000:1000"
+      - "2001:2001"
     depends_on:
       - consul
       - onboarding
@@ -35,9 +35,21 @@ services:
         - app-network
     environment:
       - HOST_IP=192.168.29.60
-      - CONSUL_PORT=8500
+      - CONSUL_PORT=1000
+      - SERVICE_PORT=2001
     volumes:
       - ../logs:/usr/src/app/logs
+
+  # frontend:
+  #   build: ../s-ui
+  #   container_name: frontend
+  #   networks:
+  #     - app-network
+  #   restart: always
+  #   ports:
+  #     - "4200:80"
+  #   depends_on:
+  #     - reverseproxy
   
 networks:
   app-network:

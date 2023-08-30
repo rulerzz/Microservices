@@ -1,3 +1,0 @@
-{"level":"info","message":"Onboarding Service listening on port 5001","service":"onboarding-service","timestamp":"2023-07-28T16:47:10.805Z"}
-{"level":"info","message":"Connected to MongoDB Database @onboardingdb.tcuq3h0.mongodb.net!","service":"onboarding-service","timestamp":"2023-07-28T16:47:11.547Z"}
-{"level":"info","message":"Onboarding Service registered with consul","service":"onboarding-service","timestamp":"2023-07-28T16:47:26.970Z"}

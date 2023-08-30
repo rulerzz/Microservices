@@ -1,5 +1,0 @@
-172.28.0.1 - - [28/Jul/2023:14:41:08 +0000] 200 "GET /v1/onboarding-service/health HTTP/1.1" 26 "-" "Consul Health Check" "-"
-172.28.0.1 - - [28/Jul/2023:14:41:11 +0000] 200 "GET /v1/onboarding-service/health HTTP/1.1" 26 "-" "PostmanRuntime/7.32.3" "-"
-172.28.0.1 - - [28/Jul/2023:14:41:18 +0000] 200 "PUT /v1/agent/service/register HTTP/1.1" 0 "-" "papi/1.1.2" "-"
-172.28.0.1 - - [28/Jul/2023:14:41:28 +0000] 200 "GET /v1/onboarding-service/health HTTP/1.1" 26 "-" "Consul Health Check" "-"
-172.28.0.1 - - [28/Jul/2023:14:41:38 +0000] 200 "GET /v1/onboarding-service/health HTTP/1.1" 26 "-" "Consul Health Check" "-"
