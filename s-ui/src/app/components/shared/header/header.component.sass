@@ -1,0 +1,49 @@
+$small: 425px
+$medium: 900px
+
+.example-spacer
+  @media screen and (max-width: $small)
+    flex: 1 1 auto
+  @media screen and (min-width: $medium)
+    display: none
+
+.menu-holder
+  @media screen and (max-width: $small)
+    display: none
+  @media screen and (min-width: $medium)
+    flex: 4
+    padding: 0 0 0 15%
+    .menu-items
+      margin: 0 2rem 0 0
+
+.mobile-menu
+  @media screen and (max-width: $small)
+    flex: 1 1 auto
+  @media screen and (min-width: $medium)
+    display: none
+
+.registration
+  @media screen and (max-width: $small)
+    display: none
+  @media screen and (min-width: $medium)
+    flex: 1
+    padding: 0 0 0 0
+    button
+      margin: 0 0 0 0.5rem
+
+#app_brand:hover
+  cursor: pointer
+#app_brand a
+    color: white
+    text-decoration: none !important
+
+mat-toolbar
+  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f
+  position: relative
+
+button[mat-button], button[mat-raised-button]
+  font-family: roboto400
+  font-size: 14px
+  line-height: 36px
+button[mat-button]
+  color: white

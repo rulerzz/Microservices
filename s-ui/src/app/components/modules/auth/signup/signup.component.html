@@ -1,0 +1,39 @@
+<header>
+  <h1>Register</h1>
+</header>
+<div class="container">
+    <div class="flex-child">
+      <form class="signupForm" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+          <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="kafka" type="text" id="username" formControlName="username" required>
+            <mat-icon matSuffix>person</mat-icon>
+            <mat-error *ngIf="this.signupForm.get('username')?.errors?.required">{{getErrorMessage('username')}}</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-control">
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="pat@example.com" type="email" id="email" formControlName="email" required>
+            <mat-icon matSuffix>mail</mat-icon>
+            <mat-error *ngIf="this.signupForm.get('email')?.errors?.required">{{getErrorMessage('email')}}</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-control">
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" id="password" formControlName="password" required>
+            <mat-icon matSuffix>password</mat-icon>
+            <mat-error *ngIf="this.signupForm.get('password')?.errors?.required">{{getErrorMessage('password')}}</mat-error>
+          </mat-form-field>
+        </div>
+
+        <button mat-flat-button color="primary" [disabled]="signupForm.invalid" (click)="onSubmit()">Submit</button>
+      </form>
+    </div>
+    <div class="flex-child">
+    </div>
+</div>

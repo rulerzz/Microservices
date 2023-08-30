@@ -1,0 +1,38 @@
+.container
+  display: flex
+  flex-direction: row
+  min-height: 80vh
+  .flex-child
+    flex: 1
+    &:nth-child(2n -1)
+      padding: 4rem
+    &:nth-child(2n)
+      background: url('../../../../../assets/images/bg-1.jpg')
+      background-size: cover
+      background-repeat: no-repeat
+      background-position-x: 30%
+      background-position-y: 70%
+
+.signupForm
+  padding: 4rem 0
+
+.form-control
+  width: 100%
+  mat-form-field
+    width: 100%
+
+button[mat-flat-button]
+  width: 100%
+  font-family: roboto500
+  text-transform: uppercase
+  padding: 1rem 1rem
+
+header
+  background: var(--mat-option-selected-state-label-text-color)
+  color: white
+  padding: 1rem
+  h1
+    margin: 0 !important
+    font-family: roboto300
+    font-size: 1.25rem
+

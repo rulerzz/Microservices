@@ -1,0 +1,68 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span id="app_brand"><a href="/">{{ application_name }}</a></span>
+    <div class="menu-holder">
+      <button mat-button [matMenuTriggerFor]="menu1" class="menu-items">
+        Menu
+      </button>
+      <mat-menu #menu1="matMenu">
+        <button mat-menu-item>New Post</button>
+        <button mat-menu-item>Search Forums</button>
+      </mat-menu>
+      <button mat-button [matMenuTriggerFor]="menu2" class="menu-items">
+        What's Cookin?
+      </button>
+      <mat-menu #menu2="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      <button mat-button [matMenuTriggerFor]="menu3" class="menu-items">
+        Resources
+      </button>
+      <mat-menu #menu3="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      <button mat-button [matMenuTriggerFor]="menu4" class="menu-items">
+        Mentors
+      </button>
+      <mat-menu #menu4="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      <button mat-button [matMenuTriggerFor]="menu5" class="menu-items">
+        Courses
+      </button>
+      <mat-menu #menu5="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      <button mat-button [matMenuTriggerFor]="menu6" class="menu-items">
+        Find a Buddy
+      </button>
+      <mat-menu #menu6="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      <button mat-button [matMenuTriggerFor]="menu7" class="menu-items">
+        Group Sessions
+      </button>
+      <mat-menu #menu7="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </div>
+    <div class="registration">
+      <button mat-raised-button routerLink="/auth/login">Login</button>
+      <button mat-raised-button routerLink="/auth/register">Signup</button>
+    </div>
+    <span class="example-spacer"></span>
+    <button
+      mat-icon-button
+      class="mobile-menu"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
